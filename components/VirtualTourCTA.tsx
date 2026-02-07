@@ -1,17 +1,19 @@
-import React, { useState } from 'react'; // 1. Added useState
+import React, { useState } from 'react';
 import { IMAGES } from '../constants';
+// 1. Import the video file from the same directory
+import tourVideo from './video.mp4'; 
 
 const VirtualTourCTA: React.FC = () => {
-  const [isPlaying, setIsPlaying] = useState(false); // 2. State to toggle video
+  const [showVideo, setShowVideo] = useState(false);
 
   return (
     <section id="virtual-tour" className="relative h-[80vh] w-full bg-[#0a0a0a] overflow-hidden flex items-center justify-center">
-      {/* Background Image Logic */}
+      {/* Background and Header (Your existing code) */}
       <div className="absolute inset-0 z-0">
         <img 
           src={IMAGES.sections.virtualTour} 
-          alt="Architectural space for virtual tour" 
-          className="w-full h-full object-cover grayscale opacity-30 scale-105 hover:scale-100 transition-transform duration-[10s] ease-linear"
+          alt="Architectural space" 
+          className="w-full h-full object-cover grayscale opacity-30 scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black" />
       </div>
@@ -26,9 +28,9 @@ const VirtualTourCTA: React.FC = () => {
         </header>
 
         <div className="flex flex-col items-center">
-          {/* 3. Added onClick to the button */}
+          {/* 2. Added onClick to trigger video */}
           <button 
-            onClick={() => setIsPlaying(true)}
+            onClick={() => setShowVideo(true)}
             className="group relative px-16 py-8 interactive overflow-hidden"
           >
              <div className="absolute inset-0 border border-white/10 group-hover:border-[#B87333]/50 transition-colors duration-500" />
@@ -36,7 +38,7 @@ const VirtualTourCTA: React.FC = () => {
              
              <span className="relative z-10 flex items-center gap-6 text-[11px] tracking-[0.8em] uppercase text-white">
                 Enter Virtual Tour
-                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="transform group-hover:translate-x-4 transition-transform duration-500">
+                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" className="transform group-hover:translate-x-4 transition-transform duration-500">
                   <path d="M12 1L17 6L12 11" stroke="currentColor" strokeWidth="1" strokeLinecap="square"/>
                   <path d="M0 6H16" stroke="currentColor" strokeWidth="1" strokeLinecap="square"/>
                 </svg>
@@ -45,22 +47,22 @@ const VirtualTourCTA: React.FC = () => {
         </div>
       </div>
 
-      {/* 4. Fullscreen Video Player Overlay */}
-      {isPlaying && (
-        <div className="fixed inset-0 z-[100] bg-black flex items-center justify-center">
+      {/* 3. Immersive Video Overlay */}
+      {showVideo && (
+        <div className="fixed inset-0 z-[100] bg-black flex items-center justify-center animate-in fade-in duration-700">
           <button 
-            onClick={() => setIsPlaying(false)}
-            className="absolute top-10 right-10 z-[110] text-white/50 hover:text-white tracking-[0.4em] uppercase text-[10px]"
+            onClick={() => setShowVideo(false)}
+            className="absolute top-12 right-12 z-[110] text-white/40 hover:text-[#B87333] transition-colors text-[10px] tracking-[0.4em] uppercase"
           >
-            [ Close Player ]
+            [ Close Experience ]
           </button>
+          
           <video 
             autoPlay 
             controls 
-            className="w-full h-full object-cover"
-            onEnded={() => setIsPlaying(false)}
+            className="w-full h-full object-contain md:object-cover"
           >
-            <source src="video.mp4" type="video/mp4" />
+            <source src={tourVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
