@@ -1,4 +1,3 @@
-
 import { WoodMaterial, FurniturePiece, Artisan } from './types';
 
 export const COLORS = {
@@ -7,13 +6,12 @@ export const COLORS = {
   sheesham: '#4A3728',
   bone: '#F5F2ED',
   slate: '#2A2A2A',
-  black: '#121212'
+  black: '#121212',
+  accentGold: '#D4AF37' // Added for the hover effect
 };
 
 /**
  * CENTRALIZED IMAGE REPOSITORY
- * Replace these URLs with your high-resolution photography.
- * Recommended: Unsplash for architectural mood, or studio photography for products.
  */
 export const IMAGES = {
   hero: {
@@ -23,8 +21,8 @@ export const IMAGES = {
     joineryDetail: 'https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNjk4N2FlOWJjYzUwODE5MWFjYTM4NzA0MDY4ZjI0OTc6ZmlsZV8wMDAwMDAwMDNkZjQ3MjBiOTBjYzc4Zjc4NWIzMWM2NyIsInRzIjoiMjA0OTEiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6ImVlNWJkM2U1MDBjNTYxMThlYWIwNzFhYzMyNmUyNjI4MjJiNmU0MzNhNjk2NzM1ZDUzYTQwZTA1MmEwZDQzYTIiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY3AiOm51bGwsIm1hIjpudWxsfQ==',
     virtualTour: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2000&auto=format&fit=crop',
     provenance: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?q=80&w=2000&auto=format&fit=crop',
-    artisan: 'https://lh3.googleusercontent.com/gg/AMW1TPo_PGc3Hqizd8zdZUrih-TsX84OIqB61GZLqccLdsLCqTdp4wi9p_1toLMt4MxhoCsSeuqz9xex0CRDhwTNJGXlKoyrgX38zD-CuErZeRWw4ACm7vUx9IC7je3vqBttp68EenBgvOz5M1IuuJyYfBvvbra1uRM8S5KX72vbUl-qsPgaiHlD=s1024-rj-mp2', // Master Rahmat Ullah
-    menuWood: 'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=1200&auto=format&fit=crop', // Background texture for menu
+    artisan: 'https://lh3.googleusercontent.com/gg/AMW1TPo_PGc3Hqizd8zdZUrih-TsX84OIqB61GZLqccLdsLCqTdp4wi9p_1toLMt4MxhoCsSeuqz9xex0CRDhwTNJGXlKoyrgX38zD-CuErZeRWw4ACm7vUx9IC7je3vqBttp68EenBgvOz5M1IuuJyYfBvvbra1uRM8S5KX72vbUl-qsPgaiHlD=s1024-rj-mp2', 
+    menuWood: 'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=1200&auto=format&fit=crop', 
   },
   materials: {
     rosewood: 'https://1.bp.blogspot.com/-BY21bK9lgFc/T6qsTOf0CvI/AAAAAAAAB8s/lqp6L48Pr4g/s1600/rosewood.jpg',
@@ -91,9 +89,11 @@ export const PIECES: FurniturePiece[] = [
   }
 ];
 
-export const COLLABORATOR: Artisan = {
+// Added 'hoverColor' to make the artisan section "pop" with a royal gold tone
+export const COLLABORATOR: Artisan & { hoverColor: string } = {
   name: 'Master Rahmat Ullah',
   role: 'Lead Artificer',
   heritage: '7th Generation Kashmiri Woodworking - from the lineage that served from takhts of mughals to sinhasan of the marathas',
-  signature: 'رحمت'
+  signature: 'رحمت',
+  hoverColor: COLORS.accentGold 
 };
