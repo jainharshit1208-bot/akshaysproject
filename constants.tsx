@@ -20,20 +20,20 @@ export const IMAGES = {
     main: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=2000&auto=format&fit=crop',
   },
   sections: {
-    joineryDetail: 'https://images.unsplash.com/photo-1541123356219-284ebe98ae3b?q=80&w=2000&auto=format&fit=crop',
+    joineryDetail: 'https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNjk4N2FlOWJjYzUwODE5MWFjYTM4NzA0MDY4ZjI0OTc6ZmlsZV8wMDAwMDAwMDNkZjQ3MjBiOTBjYzc4Zjc4NWIzMWM2NyIsInRzIjoiMjA0OTEiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6ImVlNWJkM2U1MDBjNTYxMThlYWIwNzFhYzMyNmUyNjI4MjJiNmU0MzNhNjk2NzM1ZDUzYTQwZTA1MmEwZDQzYTIiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY3AiOm51bGwsIm1hIjpudWxsfQ==',
     virtualTour: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2000&auto=format&fit=crop',
     provenance: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?q=80&w=2000&auto=format&fit=crop',
     artisan: 'https://images.unsplash.com/photo-1610633058063-41f2ecad72ee?q=80&w=1200&auto=format&fit=crop', // Master Rahmat Ullah
     menuWood: 'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=1200&auto=format&fit=crop', // Background texture for menu
   },
   materials: {
-    rosewood: 'https://images.unsplash.com/photo-1618221195710-dd6b41faeaa6?q=80&w=1000&auto=format&fit=crop',
-    teak: 'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=1000&auto=format&fit=crop',
-    sheesham: 'https://images.unsplash.com/photo-1534073828943-f801091bb18c?q=80&w=1000&auto=format&fit=crop',
+    rosewood: 'https://1.bp.blogspot.com/-BY21bK9lgFc/T6qsTOf0CvI/AAAAAAAAB8s/lqp6L48Pr4g/s1600/rosewood.jpg',
+    teak: 'https://www.wood-database.com/wp-content/uploads/teak-sealed1.jpg',
+    sheesham: 'https://ucarecdn.com/4f588eff-9a38-487f-a76c-713c91012ca5/-/format/auto/-/preview/3000x3000/-/quality/lighter/Sheesham-Wood-Swatches-Images-02.jpg',
   },
   products: {
     monolith: 'https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?q=80&w=1200&auto=format&fit=crop',
-    skeletonChair: 'https://images.unsplash.com/photo-1581539250439-c96689b516dd?q=80&w=1200&auto=format&fit=crop',
+    skeletonChair: 'https://lh3.googleusercontent.com/gg/AMW1TPqQr04tvqVoClNLkVAFCHNptSQ7oq5rJtjTlC0BIDjaWNdiUTvEhyBDORpBZNWfnJWvPb1bl6xcIWt5DvPdx_9KYdsDQfKHcI5eJL4yPhgcNHHt2XDLZiQ-F_s0vYvBqnZCUCZu4XJ8ZbO3YtyODwuf-nvbJOfVQmfBiaeM2AP_4NEDRdM=s1024-rj-mp2',
   }
 };
 
