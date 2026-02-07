@@ -23,7 +23,7 @@ export const IMAGES = {
     joineryDetail: 'https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNjk4N2FlOWJjYzUwODE5MWFjYTM4NzA0MDY4ZjI0OTc6ZmlsZV8wMDAwMDAwMDNkZjQ3MjBiOTBjYzc4Zjc4NWIzMWM2NyIsInRzIjoiMjA0OTEiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6ImVlNWJkM2U1MDBjNTYxMThlYWIwNzFhYzMyNmUyNjI4MjJiNmU0MzNhNjk2NzM1ZDUzYTQwZTA1MmEwZDQzYTIiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY3AiOm51bGwsIm1hIjpudWxsfQ==',
     virtualTour: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2000&auto=format&fit=crop',
     provenance: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?q=80&w=2000&auto=format&fit=crop',
-    artisan: 'https://images.unsplash.com/photo-1610633058063-41f2ecad72ee?q=80&w=1200&auto=format&fit=crop', // Master Rahmat Ullah
+    artisan: 'https://lh3.googleusercontent.com/gg/AMW1TPo_PGc3Hqizd8zdZUrih-TsX84OIqB61GZLqccLdsLCqTdp4wi9p_1toLMt4MxhoCsSeuqz9xex0CRDhwTNJGXlKoyrgX38zD-CuErZeRWw4ACm7vUx9IC7je3vqBttp68EenBgvOz5M1IuuJyYfBvvbra1uRM8S5KX72vbUl-qsPgaiHlD=s1024-rj-mp2', // Master Rahmat Ullah
     menuWood: 'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=1200&auto=format&fit=crop', // Background texture for menu
   },
   materials: {
