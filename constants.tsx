@@ -32,7 +32,7 @@ export const IMAGES = {
     sheesham: 'https://ucarecdn.com/4f588eff-9a38-487f-a76c-713c91012ca5/-/format/auto/-/preview/3000x3000/-/quality/lighter/Sheesham-Wood-Swatches-Images-02.jpg',
   },
   products: {
-    monolith: 'https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?q=80&w=1200&auto=format&fit=crop',
+    monolith: 'https://lh3.googleusercontent.com/gg/AMW1TPoBJzPmVM9HHx8BbaXhTI2iXAJYn813oyVczBfV2hbMsLbCqBYLndXfEzVGrlFmyLXMzZH_W8yzCAv_kAx2FuVG8Urkfa1aFK-o8X8KRYc0ojPr1mvm_YLCxyxY2Z4BThBnWk4Pz4_RihMJS6-dwFxZrHue6AHlUx9vIZcmlwaXxgK-vaM=s1024-rj-mp2',
     skeletonChair: 'https://lh3.googleusercontent.com/gg/AMW1TPqQr04tvqVoClNLkVAFCHNptSQ7oq5rJtjTlC0BIDjaWNdiUTvEhyBDORpBZNWfnJWvPb1bl6xcIWt5DvPdx_9KYdsDQfKHcI5eJL4yPhgcNHHt2XDLZiQ-F_s0vYvBqnZCUCZu4XJ8ZbO3YtyODwuf-nvbJOfVQmfBiaeM2AP_4NEDRdM=s1024-rj-mp2',
   }
 };
