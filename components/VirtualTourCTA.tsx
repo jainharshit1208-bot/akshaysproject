@@ -1,19 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { IMAGES } from '../constants';
-// 1. Import the video file from the same directory
-import tourVideo from './video.mp4'; 
 
 const VirtualTourCTA: React.FC = () => {
-  const [showVideo, setShowVideo] = useState(false);
+  // Constant for the video URL
+  const VIDEO_URL = "https://www.youtube.com/watch?v=McqTY_5XdGY";
 
   return (
     <section id="virtual-tour" className="relative h-[80vh] w-full bg-[#0a0a0a] overflow-hidden flex items-center justify-center">
-      {/* Background and Header (Your existing code) */}
       <div className="absolute inset-0 z-0">
         <img 
           src={IMAGES.sections.virtualTour} 
-          alt="Architectural space" 
-          className="w-full h-full object-cover grayscale opacity-30 scale-105"
+          alt="Architectural space for virtual tour" 
+          className="w-full h-full object-cover grayscale opacity-30 scale-105 hover:scale-100 transition-transform duration-[10s] ease-linear"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black" />
       </div>
@@ -28,48 +26,29 @@ const VirtualTourCTA: React.FC = () => {
         </header>
 
         <div className="flex flex-col items-center">
-          {/* 2. Added onClick to trigger video */}
-          <button 
-            onClick={() => setShowVideo(true)}
-            className="group relative px-16 py-8 interactive overflow-hidden"
+          {/* Changed button to an anchor tag for navigation */}
+          <a 
+            href={VIDEO_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative px-16 py-8 interactive overflow-hidden inline-block cursor-pointer"
           >
              <div className="absolute inset-0 border border-white/10 group-hover:border-[#B87333]/50 transition-colors duration-500" />
              <div className="absolute inset-0 bg-white/[0.02] backdrop-blur-sm transform translate-y-full group-hover:translate-y-0 transition-transform duration-700" />
              
              <span className="relative z-10 flex items-center gap-6 text-[11px] tracking-[0.8em] uppercase text-white">
                 Enter Virtual Tour
-                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" className="transform group-hover:translate-x-4 transition-transform duration-500">
+                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="transform group-hover:translate-x-4 transition-transform duration-500">
                   <path d="M12 1L17 6L12 11" stroke="currentColor" strokeWidth="1" strokeLinecap="square"/>
                   <path d="M0 6H16" stroke="currentColor" strokeWidth="1" strokeLinecap="square"/>
                 </svg>
              </span>
-          </button>
+          </a>
         </div>
       </div>
 
-      {/* 3. Immersive Video Overlay */}
-      {showVideo && (
-        <div className="fixed inset-0 z-[100] bg-black flex items-center justify-center animate-in fade-in duration-700">
-          <button 
-            onClick={() => setShowVideo(false)}
-            className="absolute top-12 right-12 z-[110] text-white/40 hover:text-[#B87333] transition-colors text-[10px] tracking-[0.4em] uppercase"
-          >
-            [ Close Experience ]
-          </button>
-          
-          <video 
-            autoPlay 
-            controls 
-            className="w-full h-full object-contain md:object-cover"
-          >
-            <source src={tourVideo} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      )}
-
-      <div className="absolute bottom-12 right-12 flex items-center gap-4 opacity-20">
-        <span className="text-[10px] tracking-widest uppercase text-white">Immersive Mode</span>
+      <div className="absolute bottom-12 right-12 flex items-center gap-4 opacity-20 text-white">
+        <span className="text-[10px] tracking-widest uppercase">Immersive Mode</span>
         <div className="w-12 h-[1px] bg-white" />
       </div>
     </section>
